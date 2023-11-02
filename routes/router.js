@@ -14,11 +14,6 @@ const clientesRouter = require('./clientes')
 
 router.use('/', clientesRouter)
 
-// CTE router
-const CTERouter = require('./CTEs')
-
-router.use('/', CTERouter)
-
 // Motorista Router
 const motoristaRouter = require('./motoristas')
 
