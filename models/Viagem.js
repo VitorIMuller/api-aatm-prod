@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose
 const { frotaSchema } = require('./Frota')
 const { clienteSchema } = require('./Cliente')
-const { CTESchema } = require('./CTE')
 
 const viagemSchema = new Schema(
   {
