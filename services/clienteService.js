@@ -7,8 +7,8 @@ async function criarCliente(params) {
     telefone: params.telefone,
     cpf_cnpj: params.cpf_cnpj,
     endereco: params.endereco,
-    valor_frete_sj: params.valor_frete_sj,
-    valor_frete_lp: params.valor_frete_lp,
+    valor_frete_subida: params.valor_frete_subida,
+    valor_frete_descida: params.valor_frete_descida,
   }
 
   const response = await ClienteModel.create(cliente)
@@ -23,8 +23,8 @@ async function editarCliente(params, cliente_id) {
     telefone: params.telefone,
     cpf_cnpj: params.cpf_cnpj,
     endereco: params.endereco,
-    valor_frete_sj: params.valor_frete_sj,
-    valor_frete_lp: params.valor_frete_lp,
+    valor_frete_subida: params.valor_frete_subida,
+    valor_frete_descida: params.valor_frete_descida,
     status: params.status,
   }
 

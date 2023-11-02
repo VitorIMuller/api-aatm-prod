@@ -8,18 +8,15 @@ const clienteSchema = new Schema(
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-      required: true,
-    },
+    email: String,
     telefone: String,
     cpf_cnpj: {
       type: String,
       required: true,
     },
     endereco: String,
-    valor_frete_sj: Number,
-    valor_frete_lp: Number,
+    valor_frete_frete_subida: Number,
+    valor_frete_descida: Number,
     status: {
       type: Boolean,
       default: 1,
