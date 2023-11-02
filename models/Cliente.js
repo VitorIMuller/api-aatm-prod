@@ -15,7 +15,7 @@ const clienteSchema = new Schema(
       required: true,
     },
     endereco: String,
-    valor_frete_frete_subida: Number,
+    valor_frete_subida: Number,
     valor_frete_descida: Number,
     status: {
       type: Boolean,
