@@ -29,4 +29,9 @@ const viagemRouter = require('./viagem')
 
 router.use('/', viagemRouter)
 
+// Cobrança Router
+const cobrancaRouter = require('./cobranca')
+
+router.use('/', viagemRouter)
+
 module.exports = router

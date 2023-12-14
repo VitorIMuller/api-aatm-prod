@@ -2,22 +2,19 @@ const mongoose = require('mongoose')
 
 const { Schema } = mongoose
 const { frotaSchema } = require('./Frota')
-const { clienteSchema } = require('./Cliente')
 
 const viagemSchema = new Schema(
   {
     frota: {
       type: [frotaSchema],
     },
-    cliente: {
-      type: [clienteSchema],
-    },
     rota: String,
     data_inicio: Date,
+    valor_total_cte: Number,
+    valor_total_romaneio: Number,
+    valor_total: Number,
     despesas: String,
-    valor_total_sj: String,
-    valor_total_lp: String,
-    ctes: Array
+    cobrancas: Array
   },
   { timestamps: true },
 )
