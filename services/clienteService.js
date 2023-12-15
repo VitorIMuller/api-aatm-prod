@@ -31,8 +31,8 @@ async function editarCliente(params, cliente_id) {
   const response = await ClienteModel.findByIdAndUpdate(cliente_id, cliente, {
     new: true,
   })
-  console.log(response)
-  console.log(cliente)
+  // console.log(response)
+  // console.log(cliente)
 
   return response
 }

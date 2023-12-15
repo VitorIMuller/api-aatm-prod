@@ -32,6 +32,6 @@ router.use('/', viagemRouter)
 // Cobrança Router
 const cobrancaRouter = require('./cobranca')
 
-router.use('/', viagemRouter)
+router.use('/', cobrancaRouter)
 
 module.exports = router

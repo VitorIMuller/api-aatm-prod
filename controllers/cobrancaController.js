@@ -34,7 +34,7 @@ const cobrancaController = {
             // } else {
             //     viagens = await ViagemModel.find({})
             // }
-            const cobrancas = await ViagemModel.find({})
+            const cobrancas = await cobrancaModel.find({})
 
 
             res.json(cobrancas)

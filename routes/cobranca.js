@@ -2,7 +2,7 @@ const router = require('express').Router()
 
 const cobrancaController = require('../controllers/cobrancaController')
 
-router.route('/cobranca').get((req, res) => cobrancaController.getAll(req, res))
+router.route('/cobrancas').get((req, res) => cobrancaController.getAll(req, res))
 router.route('/cobranca').post((req, res) => cobrancaController.create(req, res))
 router.route('/cobranca/:id').get((req, res) => cobrancaController.get(req, res))
 router

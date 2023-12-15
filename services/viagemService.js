@@ -6,7 +6,7 @@ async function criarViagem(params) {
   const cliente = await ClienteModel.find({"cnpj": params.ctes[0].cnpj})
   const frota = await FrotaModel.findById(params.frota_id)
 
-  console.log(params)
+  // console.log(params)
 
   const viagem = {
     frota: frota,

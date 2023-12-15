@@ -37,8 +37,8 @@ async function editarCobranca(params, cobranca_id) {
     const response = await CobrancaModel.findByIdAndUpdate(cobranca_id, cobranca, {
         new: true,
     })
-    console.log(response)
-    console.log(cobranca)
+    // console.log(response)
+    // console.log(cobranca)
 
     return response
 }
